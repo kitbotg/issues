@@ -1,0 +1,38 @@
+name: Error/mistake report
+description: 'Use this template to report an error: in translation, in some service, etc.'
+title: "[ERR]: "
+labels: ["err/mistake"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this error or mistake report!
+  - type: textarea
+    id: describe-error-or-mistake
+    attributes:
+      label: Describe the error/mistake
+      description: 'A clear and concise description of what the error or mistake is. For example, "there is mistake in translation", "I cannot search music" and etc. If something working the way that not intended it is a bug and you should use "Bug report template".'
+      placeholder: I found misspellings!
+    validations:
+      required: true
+  - type: textarea
+    id: how-to-reproduce
+    attributes:
+      label: Describe a problem that your suggested feature will solve
+      description: 
+      placeholder: 'Steps to reproduce the behavior: 1. Go to... 2. Do... [...] X. There it is'
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checkboxes
+      description: Please agree with following statements
+      options:
+        - label: I am sure that I am reporting real error or mistake
+          required: true
+        - label: I am sure that it is not a bug
+          required: true

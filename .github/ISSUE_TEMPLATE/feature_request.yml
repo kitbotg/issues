@@ -1,0 +1,39 @@
+name: Feature Request
+description: Use this template to request a feature
+title: "[SUG]: "
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature request!
+  - type: textarea
+    id: suggesting
+    attributes:
+      label: Describe your feature that you suggesting
+      description: A clear and concise description of what you want to happen.
+      placeholder: I want to have ability to search e621.
+    validations:
+      required: true
+  - type: textarea
+    id: possible-problem
+    attributes:
+      label: Describe a problem that your suggested feature will solve
+      description: A clear and concise description of possible problems that would be solved by your feature.
+      placeholder: I'm always frustrated when [...], so I think [...] will solve it.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checkboxes
+      description: Select checkboxes that will suite your feature
+      options:
+        - label: This feature is unique and no one have it, and this feature will be useful for anyone
+        - label: This feature is not already implemented in bot
+          required: true

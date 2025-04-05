@@ -1,0 +1,43 @@
+name: Report
+description: Use this template to report chats and users
+title: "[REP]: "
+labels: ["report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this report!
+  - type: textarea
+    id: object-of-report
+    attributes:
+      label: Object of report
+      description: What or who do you report? Give as many data as you can. PLEASE **DO NOT** SEND ANY PERSONAL DATA or else you will be banned everywhere we can find you. It's not a threat, it's a warning.
+      placeholder: Evil Doctor Robotnik, planet Mobius, chat -100...
+    validations:
+      required: true
+  - type: textarea
+    id: describe-the-problem
+    attributes:
+      label: Describe the problem
+      description: A clear and concise description what's happened. Screenshots hosted on GitHub or any trustworthy image sharing platform will be nice. IP grabbers are not allowed.
+      placeholder: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checkboxes
+      description: Please agree with following
+      options:
+        - label: I am totally sure I'm reporting bad things
+          required: true
+        - label: I do not trying to do anything bad to someone intentionally using report system
+          required: true
+        - label: I agree that I can be punished if I'm lying
+          required: true
+        - label: I am totally sure that I'm reporting some country's law violation(s)
