@@ -18,14 +18,15 @@ body:
   - type: textarea
     id: suggestion
     attributes:
-      label: Here you can suggest how it can be fixed. Maybe some thing is hard to do? How do you see it should be done?
-      description: 
+      label: Suggestion
+      description: Here you can suggest how it can be fixed. Maybe some thing is hard to do? How do you see it should be done?
       placeholder: 'What about some command like...'
   - type: textarea
     id: additional-context
     attributes:
       label: Additional context
       description: Add any other context.
+      placeholder: ...
   - type: checkboxes
     id: terms
     attributes:
@@ -35,3 +36,5 @@ body:
         - label: I am sure that this is annoying
           required: true
         - label: I am sure that it is not an error, a bug or mistake
+          required: true
+        - label: This is so annoying that I am ready to be a Karen and demanding a reward!!!

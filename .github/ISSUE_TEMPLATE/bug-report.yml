@@ -18,14 +18,17 @@ body:
   - type: textarea
     id: how-to-reproduce
     attributes:
-      label: Describe a problem that your suggested feature will solve
-      description: 
-      placeholder: 'Steps to reproduce the behavior: 1. Go to... 2. Do... [...] X. There it is'
+      label: Steps to reproduce
+      description: Provide step-by-step instruction how to reproduce this bug
+      placeholder: '1. Go to... 2. Do... [...] X. There it is'
+    validations:
+      required: true
   - type: textarea
     id: additional-context
     attributes:
       label: Additional context
       description: Add any other context.
+      placeholder: ...
   - type: checkboxes
     id: terms
     attributes:
